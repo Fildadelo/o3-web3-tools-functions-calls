@@ -76,6 +76,36 @@ The API uses function calling: if the model returns a directive (e.g. to generat
 Integration:
 This server can be integrated with your local MCP servers or any other local service that requires Web3/coding assistance.
 
+# Solana Insights CLI
+
+This CLI tool is designed to provide AI‑driven insights for Solana tokens and trader information. It uses OpenAI’s o3‑mini model to generate a comprehensive summary report based on:
+- Market sentiment data for a given Solana memecoin.
+- Token metadata fetched from the Solana blockchain (via Solscan API).
+- Trader (wallet) information from the Solana blockchain.
+
+## Features
+
+- **Market Sentiment:** Retrieve sentiment data for a given coin.
+- **Token Information:** Fetch token metadata using Solscan's public API.
+- **Trader Information:** Retrieve wallet (trader) data from the Solana blockchain.
+- **Aggregated Insights Report:** Combine the above data and use OpenAI's o3-mini to generate a professional report with actionable insights.
+- **Adjustable Reasoning Effort:** Set the reasoning level (low, medium, high) to balance speed and depth in AI responses.
+- **Rich CLI Interface:** Uses Click and Rich to provide a polished, user‑friendly command‑line experience.
+
+## Requirements
+
+- Python 3.8+
+- [Click](https://click.palletsprojects.com/)
+- [Rich](https://rich.readthedocs.io/)
+- [aiohttp](https://docs.aiohttp.org/)
+- [openai](https://pypi.org/project/openai/)
+
+Install dependencies with:
+
+```bash
+pip install click rich aiohttp openai
+
+
 Extending the Tools
 You can extend the functionality by adding new tool functions. To do this:
 
