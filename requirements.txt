@@ -1,0 +1,8 @@
+flask
+openai
+click
+rich
+aiohttp
+discord.py
+black
+pytest
